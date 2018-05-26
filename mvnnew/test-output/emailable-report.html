@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suitename</th></tr><tr><td><a href="#t0">sanity2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">20,427</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">sanity1</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">3</td><td class="num">25,848</td><td></td><td></td></tr><tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num attn">3</th><th class="num">46,275</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suitename</th></tr></tbody><tbody id="t0"><tr><th colspan="4">sanity2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">mvnnew.mvnnew.TestExecution</td><td><a href="#m0">verify_branches</a></td><td rowspan="1">1527165430105</td><td rowspan="1">2980</td></tr><tr class="passedeven"><td><a href="#m1">verify_login</a></td><td rowspan="1">1527165427454</td><td rowspan="1">2649</td></tr></tbody><tbody id="t1"><tr><th colspan="4">sanity1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">mvnnew.mvnnew.TestExecution</td><td><a href="#m2">verify_new_empl</a></td><td rowspan="1">1527165438494</td><td rowspan="1">14</td></tr><tr class="failedeven"><td><a href="#m3">verify_new_users</a></td><td rowspan="1">1527165438229</td><td rowspan="1">13</td></tr><tr class="failedeven"><td><a href="#m4">verify_users</a></td><td rowspan="1">1527165437910</td><td rowspan="1">312</td></tr><tr><th colspan="4">sanity1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">mvnnew.mvnnew.TestExecution</td><td><a href="#m5">verify_branches</a></td><td rowspan="1">1527165431238</td><td rowspan="1">3509</td></tr><tr class="passedeven"><td><a href="#m6">verify_empl</a></td><td rowspan="1">1527165438245</td><td rowspan="1">248</td></tr><tr class="passedeven"><td><a href="#m7">verify_login</a></td><td rowspan="1">1527165428409</td><td rowspan="1">2826</td></tr><tr class="passedeven"><td><a href="#m8">verify_new_roles</a></td><td rowspan="1">1527165435974</td><td rowspan="1">1934</td></tr><tr class="passedeven"><td><a href="#m9">verify_roles</a></td><td rowspan="1">1527165434750</td><td rowspan="1">1222</td></tr></tbody></table><h2>sanity2</h2><h3 id="m0">mvnnew.mvnnew.TestExecution#verify_branches</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">mvnnew.mvnnew.TestExecution#verify_login</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>sanity1</h2><h3 id="m2">mvnnew.mvnnew.TestExecution#verify_new_empl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #BtnNew
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=BtnNew}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Employee.NewEmply_clk(Employee.java:14)
+	at mvnnew.mvnnew.Reprository.New_Emply(Reprository.java:129)
+	at mvnnew.mvnnew.TestExecution.verify_new_empl(TestExecution.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">mvnnew.mvnnew.TestExecution#verify_new_users</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #Btnuser
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=Btnuser}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Users.NewUser_clk(Users.java:29)
+	at mvnnew.mvnnew.Reprository.New_Users(Reprository.java:111)
+	at mvnnew.mvnnew.TestExecution.verify_new_users(TestExecution.java:60)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">mvnnew.mvnnew.TestExecution#verify_users</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #lst_branchS
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=lst_branchS}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Users.Branch_srh(Users.java:16)
+	at mvnnew.mvnnew.Reprository.User(Reprository.java:102)
+	at mvnnew.mvnnew.TestExecution.verify_users(TestExecution.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">mvnnew.mvnnew.TestExecution#verify_branches</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">mvnnew.mvnnew.TestExecution#verify_empl</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">mvnnew.mvnnew.TestExecution#verify_login</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">mvnnew.mvnnew.TestExecution#verify_new_roles</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">mvnnew.mvnnew.TestExecution#verify_roles</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

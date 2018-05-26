@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suitename">
+              <span class="suite-name border-failed">Suitename</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suitename">
+                    <span>G:\Tiger\mvnnew\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suitename">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suitename">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suitename">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suitename">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suitename">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suitename">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suitename" class="hide-methods failed suite-Suitename"> (hide)</a> <!-- hide-methods failed suite-Suitename -->
+                      <a href="#" panel-name="suite-Suitename" class="show-methods failed suite-Suitename"> (show)</a> <!-- show-methods failed suite-Suitename -->
+                    </span>
+                    <div class="method-list-content failed suite-Suitename">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_new_empl">verify_new_empl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_new_users">verify_new_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_users">verify_users</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suitename -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suitename" class="hide-methods passed suite-Suitename"> (hide)</a> <!-- hide-methods passed suite-Suitename -->
+                      <a href="#" panel-name="suite-Suitename" class="show-methods passed suite-Suitename"> (show)</a> <!-- show-methods passed suite-Suitename -->
+                    </span>
+                    <div class="method-list-content passed suite-Suitename">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_branches">verify_branches</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_branches">verify_branches</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_empl">verify_empl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_login">verify_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_login">verify_login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_new_roles">verify_new_roles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suitename" title="mvnnew.mvnnew.TestExecution" hash-for-method="verify_roles">verify_roles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suitename -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suitename" class="panel Suitename">
+          <div class="suite-Suitename-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mvnnew.mvnnew.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_new_empl">
+                  </a> <!-- verify_new_empl -->
+                  <span class="method-name">verify_new_empl</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #BtnNew
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=BtnNew}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Employee.NewEmply_clk(Employee.java:14)
+	at mvnnew.mvnnew.Reprository.New_Emply(Reprository.java:129)
+	at mvnnew.mvnnew.TestExecution.verify_new_empl(TestExecution.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_new_users">
+                  </a> <!-- verify_new_users -->
+                  <span class="method-name">verify_new_users</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #Btnuser
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=Btnuser}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Users.NewUser_clk(Users.java:29)
+	at mvnnew.mvnnew.Reprository.New_Users(Reprository.java:111)
+	at mvnnew.mvnnew.TestExecution.verify_new_users(TestExecution.java:60)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_users">
+                  </a> <!-- verify_users -->
+                  <span class="method-name">verify_users</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #lst_branchS
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-9OT0PJO&apos;, ip: &apos;192.168.43.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 11580, moz:profile: C:\Users\Jay\AppData\Local\..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: f00078db-444f-4347-a4fb-48eedde331f3
+*** Element info: {Using=id, value=lst_branchS}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at com.pagelibrary.ranfordbank.Users.Branch_srh(Users.java:16)
+	at mvnnew.mvnnew.Reprository.User(Reprository.java:102)
+	at mvnnew.mvnnew.TestExecution.verify_users(TestExecution.java:55)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suitename-class-failed -->
+          <div class="suite-Suitename-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mvnnew.mvnnew.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_branches">
+                  </a> <!-- verify_branches -->
+                  <span class="method-name">verify_branches</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_branches">
+                  </a> <!-- verify_branches -->
+                  <span class="method-name">verify_branches</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_empl">
+                  </a> <!-- verify_empl -->
+                  <span class="method-name">verify_empl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login">
+                  </a> <!-- verify_login -->
+                  <span class="method-name">verify_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_login">
+                  </a> <!-- verify_login -->
+                  <span class="method-name">verify_login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_new_roles">
+                  </a> <!-- verify_new_roles -->
+                  <span class="method-name">verify_new_roles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_roles">
+                  </a> <!-- verify_roles -->
+                  <span class="method-name">verify_roles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suitename-class-passed -->
+        </div> <!-- panel Suitename -->
+        <div panel-name="test-xml-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">G:\Tiger\mvnnew\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suitename&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sanity1&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mvnnew.mvnnew.TestExecution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sanity1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;sanity2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;mvnnew.mvnnew.TestExecution&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verify_login()&quot;/&gt;
+          &lt;include name=&quot;verify_branches()&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- mvnnew.mvnnew.TestExecution --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sanity2 --&gt;
+&lt;/suite&gt; &lt;!-- Suitename --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suitename</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">sanity1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">sanity2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suitename</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suitename</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suitename');
+function tableData_Suitename() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verify_branches')
+data.setCell(0, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(0, 3, 3509);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_branches')
+data.setCell(1, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(1, 3, 2980);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verify_login')
+data.setCell(2, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(2, 3, 2826);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verify_login')
+data.setCell(3, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(3, 3, 2649);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_new_roles')
+data.setCell(4, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(4, 3, 1934);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_roles')
+data.setCell(5, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(5, 3, 1222);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verify_users')
+data.setCell(6, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(6, 3, 312);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verify_empl')
+data.setCell(7, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(7, 3, 248);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verify_new_empl')
+data.setCell(8, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(8, 3, 14);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_new_users')
+data.setCell(9, 2, 'mvnnew.mvnnew.TestExecution')
+data.setCell(9, 3, 13);
+window.suiteTableData['Suitename']= { tableData: data, tableDiv: 'times-div-Suitename'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-Suitename">
+              </div> <!-- times-div-Suitename -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suitename</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mvnnew.mvnnew.TestExecution</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verify_users</span>
+                <br/>
+                <span class="ignored-method-name">verify_new_users</span>
+                <br/>
+                <span class="ignored-method-name">verify_roles</span>
+                <br/>
+                <span class="ignored-method-name">verify_empl</span>
+                <br/>
+                <span class="ignored-method-name">verify_new_roles</span>
+                <br/>
+                <span class="ignored-method-name">verify_new_empl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suitename" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">mvnnew.mvnnew.TestExecution</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">verify_launch(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">verify_launch(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verify_login</span>
+                <span class="method-start">14793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_login</span>
+                <span class="method-start">15748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_branches</span>
+                <span class="method-start">17444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_branches</span>
+                <span class="method-start">18577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_roles</span>
+                <span class="method-start">22089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_new_roles</span>
+                <span class="method-start">23313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_users</span>
+                <span class="method-start">25249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_new_users</span>
+                <span class="method-start">25568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_empl</span>
+                <span class="method-start">25584 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_new_empl</span>
+                <span class="method-start">25833 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
