@@ -50,6 +50,7 @@ public class Reprository extends Base{
 	{
     
 		Homepage.Username_text(driver).sendKeys(config("username"));
+		System.out.println("nikhil");
 		Homepage.Password_text(driver).sendKeys(config("password"));
 		Homepage.Login_clk(driver).click();
 	}
